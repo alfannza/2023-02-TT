@@ -1,388 +1,296 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20230219 05:54:52.356" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20230219 06:25:45.182" rpa="false" schemaversion="3">
 <suite id="s1" name="TC 01" source="C:\Users\alfan\PycharmProjects\2023-02-TT\main tc\TC_01.robot">
 <test id="s1-t1" name="TC-000_Browser_Setup" line="27">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230219 05:54:52.538" level="INFO">Opening browser 'Chrome' to base url 'https://www.tokopedia.com/'.</msg>
-<status status="PASS" starttime="20230219 05:54:52.537" endtime="20230219 05:54:56.307"/>
+<msg timestamp="20230219 06:25:45.367" level="INFO">Opening browser 'Chrome' to base url 'https://www.tokopedia.com/'.</msg>
+<status status="PASS" starttime="20230219 06:25:45.367" endtime="20230219 06:25:48.819"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230219 05:54:56.307" endtime="20230219 05:54:56.427"/>
+<status status="PASS" starttime="20230219 06:25:48.820" endtime="20230219 06:25:48.943"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Situs Jual Beli Online Terlengkap, Mudah &amp; Aman | Tokopedia</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230219 05:54:56.434" level="INFO">Page title is 'Situs Jual Beli Online Terlengkap, Mudah &amp; Aman | Tokopedia'.</msg>
-<status status="PASS" starttime="20230219 05:54:56.427" endtime="20230219 05:54:56.434"/>
+<msg timestamp="20230219 06:25:48.956" level="INFO">Page title is 'Situs Jual Beli Online Terlengkap, Mudah &amp; Aman | Tokopedia'.</msg>
+<status status="PASS" starttime="20230219 06:25:48.944" endtime="20230219 06:25:48.956"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 05:55:01.438" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230219 05:54:56.434" endtime="20230219 05:55:01.438"/>
+<msg timestamp="20230219 06:25:53.965" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230219 06:25:48.957" endtime="20230219 06:25:53.965"/>
 </kw>
-<status status="PASS" starttime="20230219 05:54:52.537" endtime="20230219 05:55:01.438"/>
+<status status="PASS" starttime="20230219 06:25:45.366" endtime="20230219 06:25:53.965"/>
 </test>
 <test id="s1-t2" name="TC-001_Navigate_Search" line="33">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${main_search_btn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230219 05:55:01.440" level="INFO">Clicking element 'xpath://input[@data-unify="Search"]'.</msg>
-<status status="PASS" starttime="20230219 05:55:01.440" endtime="20230219 05:55:01.519"/>
+<msg timestamp="20230219 06:25:53.967" level="INFO">Clicking element 'xpath://input[@data-unify="Search"]'.</msg>
+<status status="PASS" starttime="20230219 06:25:53.967" endtime="20230219 06:25:54.049"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 05:55:03.526" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230219 05:55:01.519" endtime="20230219 05:55:03.526"/>
+<msg timestamp="20230219 06:25:56.056" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230219 06:25:54.049" endtime="20230219 06:25:56.056"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${main_search_btn}</arg>
 <arg>laptop asus</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230219 05:55:03.527" level="INFO">Typing text 'laptop asus' into text field 'xpath://input[@data-unify="Search"]'.</msg>
-<status status="PASS" starttime="20230219 05:55:03.526" endtime="20230219 05:55:03.589"/>
+<msg timestamp="20230219 06:25:56.057" level="INFO">Typing text 'laptop asus' into text field 'xpath://input[@data-unify="Search"]'.</msg>
+<status status="PASS" starttime="20230219 06:25:56.056" endtime="20230219 06:25:56.119"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${main_search_btn}</arg>
 <arg>\ue006</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20230219 05:55:03.590" level="INFO">Sending key(s) ('\ue006',) to xpath://input[@data-unify="Search"] element.</msg>
-<msg timestamp="20230219 05:55:03.870" level="INFO">Sending key </msg>
-<status status="PASS" starttime="20230219 05:55:03.589" endtime="20230219 05:55:03.938"/>
+<msg timestamp="20230219 06:25:56.119" level="INFO">Sending key(s) ('\ue006',) to xpath://input[@data-unify="Search"] element.</msg>
+<msg timestamp="20230219 06:25:56.400" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20230219 06:25:56.119" endtime="20230219 06:25:56.471"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 05:55:06.943" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230219 05:55:03.939" endtime="20230219 05:55:06.943"/>
+<msg timestamp="20230219 06:25:59.474" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230219 06:25:56.471" endtime="20230219 06:25:59.474"/>
 </kw>
-<status status="PASS" starttime="20230219 05:55:01.440" endtime="20230219 05:55:06.945"/>
+<status status="PASS" starttime="20230219 06:25:53.967" endtime="20230219 06:25:59.475"/>
 </test>
 <test id="s1-t3" name="TC-002_Validate_Result_Page" line="43">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>xpath://div[@data-testid="dSRPSearchInfo"]/span</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230219 05:55:06.978" level="INFO">Element 'xpath://div[@data-testid="dSRPSearchInfo"]/span' is displayed.</msg>
-<status status="PASS" starttime="20230219 05:55:06.950" endtime="20230219 05:55:06.979"/>
+<msg timestamp="20230219 06:25:59.516" level="INFO">Element 'xpath://div[@data-testid="dSRPSearchInfo"]/span' is displayed.</msg>
+<status status="PASS" starttime="20230219 06:25:59.478" endtime="20230219 06:25:59.516"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>xpath://div[@data-testid="dSRPSearchInfo"]/strong</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230219 05:55:06.999" level="INFO">Element 'xpath://div[@data-testid="dSRPSearchInfo"]/strong' is displayed.</msg>
-<status status="PASS" starttime="20230219 05:55:06.979" endtime="20230219 05:55:06.999"/>
+<msg timestamp="20230219 06:25:59.535" level="INFO">Element 'xpath://div[@data-testid="dSRPSearchInfo"]/strong' is displayed.</msg>
+<status status="PASS" starttime="20230219 06:25:59.516" endtime="20230219 06:25:59.535"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>xpath://div[@data-testid="divSRPContentProducts"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230219 05:55:07.016" level="INFO">Element 'xpath://div[@data-testid="divSRPContentProducts"]' is displayed.</msg>
-<status status="PASS" starttime="20230219 05:55:06.999" endtime="20230219 05:55:07.016"/>
+<msg timestamp="20230219 06:25:59.552" level="INFO">Element 'xpath://div[@data-testid="divSRPContentProducts"]' is displayed.</msg>
+<status status="PASS" starttime="20230219 06:25:59.535" endtime="20230219 06:25:59.552"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>xpath://div[@data-testid="dSRPSearchInfo"]/span</arg>
 <arg>Menampilkan</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230219 05:55:07.032" level="INFO">Element 'xpath://div[@data-testid="dSRPSearchInfo"]/span' contains text 'Menampilkan'.</msg>
-<status status="PASS" starttime="20230219 05:55:07.017" endtime="20230219 05:55:07.032"/>
+<msg timestamp="20230219 06:25:59.567" level="INFO">Element 'xpath://div[@data-testid="dSRPSearchInfo"]/span' contains text 'Menampilkan'.</msg>
+<status status="PASS" starttime="20230219 06:25:59.552" endtime="20230219 06:25:59.567"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>xpath://div[@data-testid="dSRPSearchInfo"]/span</arg>
 <arg>barang</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230219 05:55:07.043" level="INFO">Element 'xpath://div[@data-testid="dSRPSearchInfo"]/span' contains text 'barang'.</msg>
-<status status="PASS" starttime="20230219 05:55:07.033" endtime="20230219 05:55:07.043"/>
+<msg timestamp="20230219 06:25:59.579" level="INFO">Element 'xpath://div[@data-testid="dSRPSearchInfo"]/span' contains text 'barang'.</msg>
+<status status="PASS" starttime="20230219 06:25:59.567" endtime="20230219 06:25:59.580"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>xpath://div[@data-testid="dSRPSearchInfo"]/strong</arg>
 <arg>laptop asus</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230219 05:55:07.057" level="INFO">Element 'xpath://div[@data-testid="dSRPSearchInfo"]/strong' contains text 'laptop asus'.</msg>
-<status status="PASS" starttime="20230219 05:55:07.044" endtime="20230219 05:55:07.057"/>
+<msg timestamp="20230219 06:25:59.595" level="INFO">Element 'xpath://div[@data-testid="dSRPSearchInfo"]/strong' contains text 'laptop asus'.</msg>
+<status status="PASS" starttime="20230219 06:25:59.580" endtime="20230219 06:25:59.595"/>
 </kw>
-<status status="PASS" starttime="20230219 05:55:06.948" endtime="20230219 05:55:07.058"/>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${get_text}</var>
+<arg>xpath://div[@data-testid="spnSRPProdName"]</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230219 06:25:59.604" level="INFO">${get_text} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="9f9e02935ede180b5670d7a54f7f0dc3", element="35f6efe1-e5f5-4542-af27-00801c403090")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20230219 06:25:59.595" endtime="20230219 06:25:59.604"/>
+</kw>
+<for flavor="IN">
+<var>${item}</var>
+<value>@{get_text}</value>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9f9e02935ede180b5670d7a54f7f0dc3", element="35f6efe1-e5f5-4542-af27-00801c403090")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230219 06:25:59.605" endtime="20230219 06:25:59.615"/>
+</kw>
+<status status="PASS" starttime="20230219 06:25:59.605" endtime="20230219 06:25:59.615"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9f9e02935ede180b5670d7a54f7f0dc3", element="8226825e-513a-46bd-b8e3-44bbe19cc444")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230219 06:25:59.615" endtime="20230219 06:25:59.625"/>
+</kw>
+<status status="PASS" starttime="20230219 06:25:59.615" endtime="20230219 06:25:59.625"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9f9e02935ede180b5670d7a54f7f0dc3", element="9f6fb1da-88d8-436a-8ca7-fea7ce99f9f8")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230219 06:25:59.626" endtime="20230219 06:25:59.636"/>
+</kw>
+<status status="PASS" starttime="20230219 06:25:59.625" endtime="20230219 06:25:59.636"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9f9e02935ede180b5670d7a54f7f0dc3", element="1aa631d9-2aec-4db3-a196-c4aa46a59ce5")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230219 06:25:59.636" endtime="20230219 06:25:59.647"/>
+</kw>
+<status status="PASS" starttime="20230219 06:25:59.636" endtime="20230219 06:25:59.647"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9f9e02935ede180b5670d7a54f7f0dc3", element="b4ccf0a2-dd9e-4665-826c-3e205262eed5")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230219 06:25:59.647" endtime="20230219 06:25:59.658"/>
+</kw>
+<status status="PASS" starttime="20230219 06:25:59.647" endtime="20230219 06:25:59.658"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9f9e02935ede180b5670d7a54f7f0dc3", element="3896f844-8bfd-4100-b32a-673383fe8a04")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230219 06:25:59.658" endtime="20230219 06:25:59.669"/>
+</kw>
+<status status="PASS" starttime="20230219 06:25:59.658" endtime="20230219 06:25:59.669"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9f9e02935ede180b5670d7a54f7f0dc3", element="1c3e8c5c-b589-4078-aab1-eea7d35c4382")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230219 06:25:59.669" endtime="20230219 06:25:59.680"/>
+</kw>
+<status status="PASS" starttime="20230219 06:25:59.669" endtime="20230219 06:25:59.680"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9f9e02935ede180b5670d7a54f7f0dc3", element="b461411b-cf7d-4541-ab36-10038ef841bf")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230219 06:25:59.680" endtime="20230219 06:25:59.692"/>
+</kw>
+<status status="PASS" starttime="20230219 06:25:59.680" endtime="20230219 06:25:59.692"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9f9e02935ede180b5670d7a54f7f0dc3", element="bfc6895e-c5de-44ae-8ca6-08d771d669b5")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230219 06:25:59.692" endtime="20230219 06:25:59.703"/>
+</kw>
+<status status="PASS" starttime="20230219 06:25:59.692" endtime="20230219 06:25:59.703"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9f9e02935ede180b5670d7a54f7f0dc3", element="9e13f7fc-1de7-414c-92fc-e5113849a334")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230219 06:25:59.703" endtime="20230219 06:25:59.714"/>
+</kw>
+<status status="PASS" starttime="20230219 06:25:59.703" endtime="20230219 06:25:59.714"/>
+</iter>
+<status status="PASS" starttime="20230219 06:25:59.604" endtime="20230219 06:25:59.714"/>
+</for>
+<status status="PASS" starttime="20230219 06:25:59.477" endtime="20230219 06:25:59.715"/>
 </test>
-<test id="s1-t4" name="TC-003_Click_Top_Right" line="56">
+<test id="s1-t4" name="TC-003_Click_Top_Right" line="63">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${top-right-item}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230219 05:55:07.060" level="INFO">Clicking element 'xpath://div[@data-testid="divSRPContentProducts"]/div/div[5]'.</msg>
-<status status="PASS" starttime="20230219 05:55:07.059" endtime="20230219 05:55:07.209"/>
+<msg timestamp="20230219 06:25:59.716" level="INFO">Clicking element 'xpath://div[@data-testid="divSRPContentProducts"]/div/div[5]'.</msg>
+<status status="PASS" starttime="20230219 06:25:59.716" endtime="20230219 06:25:59.926"/>
 </kw>
-<status status="PASS" starttime="20230219 05:55:07.059" endtime="20230219 05:55:07.209"/>
+<status status="PASS" starttime="20230219 06:25:59.715" endtime="20230219 06:25:59.926"/>
 </test>
-<test id="s1-t5" name="TC-004_Detail_Page_Validation" line="61">
+<test id="s1-t5" name="TC-004_Detail_Page_Validation" line="68">
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 05:55:12.215" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230219 05:55:07.211" endtime="20230219 05:55:12.215"/>
+<msg timestamp="20230219 06:26:04.942" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230219 06:25:59.928" endtime="20230219 06:26:04.942"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>xpath://img[@data-testid="PDPMainImage"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230219 05:55:12.242" level="INFO">Element 'xpath://img[@data-testid="PDPMainImage"]' is displayed.</msg>
-<status status="PASS" starttime="20230219 05:55:12.215" endtime="20230219 05:55:12.242"/>
+<msg timestamp="20230219 06:26:04.959" level="INFO">Element 'xpath://img[@data-testid="PDPMainImage"]' is displayed.</msg>
+<status status="PASS" starttime="20230219 06:26:04.942" endtime="20230219 06:26:04.959"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>xpath://button[@data-testid="tabPDPDetail"]/p</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230219 05:55:12.265" level="INFO">Element 'xpath://button[@data-testid="tabPDPDetail"]/p' is displayed.</msg>
-<status status="PASS" starttime="20230219 05:55:12.242" endtime="20230219 05:55:12.265"/>
+<msg timestamp="20230219 06:26:04.975" level="INFO">Element 'xpath://button[@data-testid="tabPDPDetail"]/p' is displayed.</msg>
+<status status="PASS" starttime="20230219 06:26:04.959" endtime="20230219 06:26:04.975"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>xpath://button[text()="Lihat Selengkapnya"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230219 05:55:12.291" level="INFO">Element 'xpath://button[text()="Lihat Selengkapnya"]' is displayed.</msg>
-<status status="PASS" starttime="20230219 05:55:12.265" endtime="20230219 05:55:12.291"/>
+<msg timestamp="20230219 06:26:04.991" level="INFO">Element 'xpath://button[text()="Lihat Selengkapnya"]' is displayed.</msg>
+<status status="PASS" starttime="20230219 06:26:04.975" endtime="20230219 06:26:04.991"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://button[text()="Lihat Selengkapnya"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230219 05:55:12.291" level="INFO">Clicking element 'xpath://button[text()="Lihat Selengkapnya"]'.</msg>
-<status status="PASS" starttime="20230219 05:55:12.291" endtime="20230219 05:55:12.386"/>
+<msg timestamp="20230219 06:26:04.992" level="INFO">Clicking element 'xpath://button[text()="Lihat Selengkapnya"]'.</msg>
+<status status="PASS" starttime="20230219 06:26:04.992" endtime="20230219 06:26:05.086"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>xpath://div[@data-testid="lblPDPDescriptionProduk"]</arg>
-<arg>asus</arg>
-<arg>${EMPTY}</arg>
-<arg>${False}</arg>
+<arg>ASUS</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230219 05:55:12.607" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-64.png"&gt;&lt;img src="selenium-screenshot-64.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230219 05:55:12.608" level="FAIL">AssertionError</msg>
-<status status="FAIL" starttime="20230219 05:55:12.386" endtime="20230219 05:55:12.609"/>
+<msg timestamp="20230219 06:26:05.168" level="INFO">Element 'xpath://div[@data-testid="lblPDPDescriptionProduk"]' contains text 'ASUS'.</msg>
+<status status="PASS" starttime="20230219 06:26:05.086" endtime="20230219 06:26:05.169"/>
 </kw>
-<status status="FAIL" starttime="20230219 05:55:07.211" endtime="20230219 05:55:12.610">AssertionError</status>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${get_text}</var>
+<arg>xpath://div[@data-testid="lblPDPDescriptionProduk"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230219 06:26:05.188" level="INFO">${get_text} = GARANSI RESMI ASUS INDONESIA 2 TAHUN
+GARANSI TOKO 5 HARI TERHITUNG DARI BARANG DI TERIMA
+JAMINAN BARANG ORIGINAL DAN RESMI
+
+## AGRES.ID ##
+TOKO OFFICIAL untuk melayani customer dalam pembelian laptop
+...</msg>
+<status status="PASS" starttime="20230219 06:26:05.169" endtime="20230219 06:26:05.188"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${get_text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230219 06:26:05.188" endtime="20230219 06:26:05.192"/>
+</kw>
+<status status="PASS" starttime="20230219 06:25:59.928" endtime="20230219 06:26:05.193"/>
 </test>
-<test id="s1-t6" name="TC-004_Get_Started_Button_Should_Start_Conversation" line="78">
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20230219 05:55:12.611" endtime="20230219 05:55:12.613"/>
-</kw>
-<kw name="Delete All Cookies" library="SeleniumLibrary">
-<doc>Deletes all cookies.</doc>
-<status status="PASS" starttime="20230219 05:55:12.614" endtime="20230219 05:55:12.727"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>localStorage.clear();</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230219 05:55:12.728" level="INFO">Executing JavaScript:
-localStorage.clear();
-Without any arguments.</msg>
-<status status="PASS" starttime="20230219 05:55:12.727" endtime="20230219 05:55:12.731"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${widget_open_btn_loc}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230219 05:55:12.732" level="INFO">Clicking element 'id:widget-activator'.</msg>
-<msg timestamp="20230219 05:55:12.901" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-65.png"&gt;&lt;img src="selenium-screenshot-65.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230219 05:55:12.902" level="FAIL">Element with locator 'id:widget-activator' not found.</msg>
-<status status="FAIL" starttime="20230219 05:55:12.731" endtime="20230219 05:55:12.902"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:12.903" endtime="20230219 05:55:12.903"/>
-</kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>${widget_frame_loc}</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:12.903" endtime="20230219 05:55:12.903"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:12.903" endtime="20230219 05:55:12.903"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${widget_get_started_btn_loc}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:12.904" endtime="20230219 05:55:12.904"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:12.904" endtime="20230219 05:55:12.904"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${widget_last_msg_bot_loc}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:12.905" endtime="20230219 05:55:12.905"/>
-</kw>
-<kw name="Element Text Should Not Be" library="SeleniumLibrary">
-<arg>${widget_last_msg_bot_loc}</arg>
-<arg>${EMPTY}</arg>
-<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:12.905" endtime="20230219 05:55:12.905"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>${widget_last_msg_bot_loc}</arg>
-<arg>Hi! How are you?</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:12.905" endtime="20230219 05:55:12.905"/>
-</kw>
-<status status="FAIL" starttime="20230219 05:55:12.610" endtime="20230219 05:55:12.905">Element with locator 'id:widget-activator' not found.</status>
-</test>
-<test id="s1-t7" name="TC-005_Sending_Hello_Message" line="103">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${widget_input_loc}</arg>
-<arg>hello</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230219 05:55:12.907" level="INFO">Typing text 'hello' into text field 'xpath://*[@id="app"]/div/div[3]/div/div[1]/input'.</msg>
-<msg timestamp="20230219 05:55:13.070" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-66.png"&gt;&lt;img src="selenium-screenshot-66.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230219 05:55:13.071" level="FAIL">Element with locator 'xpath://*[@id="app"]/div/div[3]/div/div[1]/input' not found.</msg>
-<status status="FAIL" starttime="20230219 05:55:12.907" endtime="20230219 05:55:13.072"/>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<arg>${widget_input_loc}</arg>
-<arg>\ue006</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:13.072" endtime="20230219 05:55:13.072"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>4</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:13.073" endtime="20230219 05:55:13.073"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>${widget_last_msg_bot_loc}</arg>
-<arg>hello!</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:13.073" endtime="20230219 05:55:13.073"/>
-</kw>
-<status status="FAIL" starttime="20230219 05:55:12.906" endtime="20230219 05:55:13.074">Element with locator 'xpath://*[@id="app"]/div/div[3]/div/div[1]/input' not found.</status>
-</test>
-<test id="s1-t8" name="TC-006_Click_Bottom_Button_Should_Trigger_Message" line="112">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${widget_hello_btn_loc}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230219 05:55:13.075" level="INFO">Clicking element 'xpath://span[@class="material-design-icon wrench-icon"]'.</msg>
-<msg timestamp="20230219 05:55:13.223" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-67.png"&gt;&lt;img src="selenium-screenshot-67.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230219 05:55:13.223" level="FAIL">Element with locator 'xpath://span[@class="material-design-icon wrench-icon"]' not found.</msg>
-<status status="FAIL" starttime="20230219 05:55:13.075" endtime="20230219 05:55:13.223"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:13.223" endtime="20230219 05:55:13.223"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${widget_last_msg_me_loc}</arg>
-<arg>Hello</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:13.224" endtime="20230219 05:55:13.224"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:13.224" endtime="20230219 05:55:13.224"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${widget_last_msg_bot_loc}</arg>
-<arg>hello!</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:13.224" endtime="20230219 05:55:13.224"/>
-</kw>
-<status status="FAIL" starttime="20230219 05:55:13.075" endtime="20230219 05:55:13.225">Element with locator 'xpath://span[@class="material-design-icon wrench-icon"]' not found.</status>
-</test>
-<test id="s1-t9" name="TC-007_Widget_Should_Reply_With_What" line="124">
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${widget_what_btn_loc}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230219 05:55:13.378" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-68.png"&gt;&lt;img src="selenium-screenshot-68.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230219 05:55:13.378" level="FAIL">Element with locator 'xpath://div[@class="message-button"][text()=" What "]' not found.</msg>
-<status status="FAIL" starttime="20230219 05:55:13.226" endtime="20230219 05:55:13.379"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${widget_what_btn_loc}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:13.379" endtime="20230219 05:55:13.379"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:13.379" endtime="20230219 05:55:13.379"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${widget_last_msg_bot_loc}</arg>
-<arg>what ?</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:13.380" endtime="20230219 05:55:13.380"/>
-</kw>
-<status status="FAIL" starttime="20230219 05:55:13.226" endtime="20230219 05:55:13.380">Element with locator 'xpath://div[@class="message-button"][text()=" What "]' not found.</status>
-</test>
-<test id="s1-t10" name="TC-008_Widget_Retains_Conversation" line="133">
-<kw name="Reload Page" library="SeleniumLibrary">
-<doc>Simulates user reloading page.</doc>
-<status status="PASS" starttime="20230219 05:55:13.382" endtime="20230219 05:55:13.387"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 05:55:16.401" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230219 05:55:13.388" endtime="20230219 05:55:16.401"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${widget_open_btn_loc}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20230219 05:55:21.575" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-69.png"&gt;&lt;img src="selenium-screenshot-69.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230219 05:55:21.575" level="FAIL">Element 'id:widget-activator' not visible after 5 seconds.</msg>
-<status status="FAIL" starttime="20230219 05:55:16.401" endtime="20230219 05:55:21.576"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${widget_open_btn_loc}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:21.576" endtime="20230219 05:55:21.576"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:21.577" endtime="20230219 05:55:21.577"/>
-</kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>${widget_frame_loc}</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:21.577" endtime="20230219 05:55:21.577"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>6</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:21.577" endtime="20230219 05:55:21.577"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${widget_last_msg_me_loc}</arg>
-<arg>What</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:21.578" endtime="20230219 05:55:21.578"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${widget_last_msg_bot_loc}</arg>
-<arg>what ?</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="NOT RUN" starttime="20230219 05:55:21.578" endtime="20230219 05:55:21.578"/>
-</kw>
-<status status="FAIL" starttime="20230219 05:55:13.381" endtime="20230219 05:55:21.579">Element 'id:widget-activator' not visible after 5 seconds.</status>
-</test>
-<test id="s1-t11" name="TC-ZZZ_Browser_Close" line="151">
+<test id="s1-t6" name="TC-ZZZ_Browser_Close" line="88">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230219 05:55:21.580" endtime="20230219 05:55:23.746"/>
+<status status="PASS" starttime="20230219 06:26:05.195" endtime="20230219 06:26:08.870"/>
 </kw>
-<status status="PASS" starttime="20230219 05:55:21.580" endtime="20230219 05:55:23.747"/>
+<status status="PASS" starttime="20230219 06:26:05.194" endtime="20230219 06:26:08.871"/>
 </test>
-<status status="FAIL" starttime="20230219 05:54:52.356" endtime="20230219 05:55:23.751"/>
+<status status="PASS" starttime="20230219 06:25:45.184" endtime="20230219 06:26:08.874"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="6" skip="0">All Tests</stat>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="5" fail="6" skip="0" id="s1" name="TC 01">TC 01</stat>
+<stat pass="6" fail="0" skip="0" id="s1" name="TC 01">TC 01</stat>
 </suite>
 </statistics>
 <errors>

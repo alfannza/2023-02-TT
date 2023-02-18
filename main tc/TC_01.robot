@@ -52,6 +52,13 @@ TC-002_Validate_Result_Page
 
     element should contain    xpath://div[@data-testid="dSRPSearchInfo"]/strong    laptop asus
 
+    # try to list all result text in this page
+    ${get_text}    get webelements    xpath://div[@data-testid="spnSRPProdName"]
+    FOR    ${item}    IN    @{get_text}
+        log to console    ${\n}${item.text}
+    END
+
+
 
 TC-003_Click_Top_Right
 
@@ -74,6 +81,9 @@ TC-004_Detail_Page_Validation
 
     # validating certain word "asus" exist in detail product
     element should contain    xpath://div[@data-testid="lblPDPDescriptionProduk"]    ASUS
+
+    ${get_text}    get text    xpath://div[@data-testid="lblPDPDescriptionProduk"]
+    log to console    \n${get_text}
 
 TC-ZZZ_Browser_Close
     close browser
